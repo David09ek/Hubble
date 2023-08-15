@@ -1,0 +1,438 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    transition: 0.5s ease;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin: 0;
+    color: hsl(192, 100%, 9%);
+}
+
+h2 {
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: hsl(192, 100%, 9%);
+}
+
+p {
+    font-size: 15px;
+    color: hsl(208, 11%, 55%);
+}
+
+.main {
+    background-image: url(./drive-download-20230814T225506Z-001/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: poppins;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    height: 100px;
+    width: 100%;
+}
+
+header button {
+    font-size: 15px;
+    font-weight: 700;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+}
+
+header button:hover {
+    color: hsl(194, 12%, 73%);
+}
+
+.main .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    height: calc(100vh - 140px);
+    width: 100%;
+}
+
+.main .content .left {
+    width: 50%;
+}
+
+.main .content .left p {
+    margin: 15px 0px;
+}
+
+.main .content .left button {
+    width: 300px;
+    height: 52px;
+    font-size: 12px;
+    border-radius: 35px;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+}
+
+.main .content .left button:hover {
+    background-color: hsl(322, 100%, 78%);
+}
+
+.main .content .right {
+    width: 60%;
+}
+
+.main .content .right img {
+    width: 80%;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px 300px;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1300px;
+    height: 400px;
+    box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 30px 50px 30px 100px;
+}
+
+.container:nth-child(2) .middle-img {
+    order: -1;
+}
+
+.container .middle-text {
+    width: 40%;
+}
+
+.container .middle-text p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.container .middle-img {
+    height: 70%;
+    width: 30%;
+}
+
+.container .middle-img img {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    width: 80%;
+    height: 250px;
+    max-width: 700px;
+    position: absolute;
+    bottom: -80px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    -webkit-box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: -3px 8px 37px -17px rgba(0, 0, 0, 0.36);
+    background-color: #ffffff;
+}
+
+section button {
+    width: 350px;
+    height: 60px;
+    border-radius: 35px;
+    border: none;
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    margin-top: 30px;
+}
+
+section button:hover {
+    background-color: hsl(322, 100%, 78%);
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    padding: 100px 150px 0px;
+}
+
+footer p {
+    color: hsl(193, 100%, 96%);
+}
+
+.footer-middle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* margin: 40px 0px 10px; */
+}
+
+.footer-middle .section1 {
+    display: flex;
+    flex-direction: column;
+}
+
+/* .footer-middle .section1 div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+} */
+
+.footer-middle .section1 div img {
+    margin: 5px 20px 0px 0px;
+}
+
+.footer-middle .section2,
+.footer-middle .section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-middle .section2 a,
+.footer-middle .section3 a {
+    color: hsl(193, 100%, 96%);
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.footer-middle .section2 a:hover,
+.footer-middle .section3 a:hover {
+    text-decoration: underline;
+}
+
+.section4 {
+    display: flex;
+}
+
+.section4 button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background: transparent;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(193, 100%, 96%);
+}
+
+.section4 button:hover {
+    border-color: hsl(322, 100%, 66%);
+}
+
+.section4 button svg {
+    width: 100%;
+    height: 100%;
+    fill: hsl(193, 100%, 96%);
+}
+
+.section4 button svg:hover {
+    fill: hsl(322, 100%, 66%);
+} 
+
+.copyright {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 576px) {
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 6px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .main {
+        background-image: url(./drive-download-20230814T225506Z-001/bg-hero-desktop.svg);
+    }
+
+    header {
+        padding: 14px 16px 29px;
+        height: 80px;
+    }
+
+    header img {
+        width: 22%;
+        height: 15px;
+        margin: 0;
+    }
+
+    header button {
+        width: 100px;
+        height: 20px;
+        font-size: 8px;
+        border-radius: 20px;
+    }
+
+    .main .content {
+        padding: 0px 26px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: calc(100vh - 90px);
+    }
+
+    .main .content .left {
+        width: 100%;
+        max-width: 360px;
+        text-align: center;
+    }
+
+    .main .content .left h1 {
+        font-size: 30px;
+        margin: 15px 0px;
+    }
+
+    .main .content .left p {
+        font-size: 10px;
+        margin: 15px 0px;
+    }
+
+    .main .content .left button {
+        width: 250px;
+        height: 40px;
+        border-radius: 25px;
+    }
+
+    .main .content .right {
+        width: 100%;
+        max-width: 360px;
+        margin-top: 80px;
+    }
+    
+    .main .content .right img {
+        width: 100%;
+    }
+
+    .container {
+        height: 550px;
+        width: 90%;
+        padding: 8px 16px;
+        flex-direction: column;
+    }
+
+    .container .middle-text {
+        width: 90%;
+        text-align: center;
+        margin: 30px 0px;
+    }
+
+    .container .middle-text p {
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+    
+    .container .middle-text h2 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-top: 20px;
+    }
+
+    .container .middle-img {
+        height: 50%;
+        width: 100%;
+        order: -1;
+    }
+
+    section {
+        height: 200px;
+        bottom: -60px;
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    section button {
+        width: 200px;
+        height: 50px;
+    }
+
+    footer {
+        height: auto;
+        padding: 100px 16px 0px;
+        justify-content: flex-start;
+    }
+
+    .footer-top svg {
+        transform: scale(0.8);
+        margin-left: -25px;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+    }
+
+    .footer-middle .section1 {
+        margin-bottom: 50px;
+    }
+
+    .section4 {
+        margin: 50px 0px 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .copyright {
+        margin-bottom: 80px;
+        justify-content: center;
+    }
+}
